@@ -43,8 +43,8 @@ int main()
 	cout << "\nPonteiros\n";
 	cout << "===========\n";
 	string* ponteiro = &texto;
-	cout << "Para a variavel 'texto' do exemplo acima: string* ponteiro = &texto\nO endereco da memoria onde o valor foi armazenado (ponteiro)  = " << ponteiro << endl;
-	cout << "O valor armazendo no local indicado pelo ponteiro e *ponteiro = \"" << *ponteiro << "\"";
+	cout << "Para a variável 'texto' do exemplo acima: string* ponteiro = &texto\nO endereco da memoria onde o valor foi armazenado (ponteiro)  = " << ponteiro << endl;
+	cout << "O valor armazenado no local indicado pelo ponteiro e *ponteiro = \"" << *ponteiro << "\"";
 
 	cout << endl << endl;
 
@@ -59,6 +59,7 @@ int main()
 	int dias = 0;
 	int horas = 0;
 	int minutos = 0;
+	int segundos = 0;
 
 	cout << "Digite seu nome: ";
 	cin >> nome;
@@ -67,13 +68,14 @@ int main()
 	dias = idade * 365;
 	horas = dias * 24;
 	minutos = horas  * 60;
-	cout << "Sua idade em dias e: " << dias << endl;
-	cout << "Sua idade em horas e: " << horas << endl;
-	cout << "Sua idade em minutos e: " << minutos << endl;
+	segundos = minutos * 60;
+	cout << "Sua idade em dias é: " << dias << endl;
+	cout << "Sua idade em horas é: " << horas << endl;
+	cout << "Sua idade em minutos é: " << minutos << endl;
+	cout << "Sua idade em segundos é: " << segundos << endl;
 
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
 
 
 }
-
